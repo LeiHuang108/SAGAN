@@ -39,7 +39,6 @@ def onehot_encoding(file):
     return peptide_seqs_encoded_onehot
 
 
-# 创建PyTorch数据集
 class SequenceDataset(Dataset):
     def __init__(self, seqs, labels, ids):
         self.seqs = seqs
